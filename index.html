@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>kartu ultah</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
 
       <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,14 +17,18 @@
   <div class='crater3'></div>
 </div>
 <canvas id="canvas"></canvas>
-<div id="sea"></div>
-<div id="beach"></div>
-<img src="https://dl.dropbox.com/s/2k0mtrxc2dqurmh/jumping.png" alt="jumping-people" id="people" />
-<img src="https://dl.dropbox.com/s/zoftkmdxyyqr8ce/belair.png" alt="jumping-people" id="car" />
+<!-- <div id="sea"></div> -->
+<!-- <div id="beach"></div> -->
+<!-- <img src="https://dl.dropbox.com/s/2k0mtrxc2dqurmh/jumping.png" alt="jumping-people" id="people" /> -->
+<!-- <img src="https://dl.dropbox.com/s/zoftkmdxyyqr8ce/belair.png" alt="jumping-people" id="car" />-->
 
 <div id="merrywrap" class="merrywrap">
 
-    <!-- for countdown -->
+  <!-- for confetti -->
+  <span id="point1" style="display: block;"></span>
+  <span id="point2" style="display: block; float: right;"></span>
+
+  <!-- for countdown -->
   <div id="countdown" style="display: none;">
     <h1>Kurang</h1>
     <h1 id="timer">0 Hari 0 Jam 0 Menit 0 Detik</h1>
@@ -64,9 +69,12 @@
   </div>
 </div>
 
+<div id="video">
+<iframe width="255" height="155" src="https://www.youtube.com/embed/KDxJlW6cxRk?controls=0&loop=1" frameborder="0" allowfullscreen></iframe>
+</div>
+
   
-  <div id="video"></div>
- 
+  <script src='js/confetti.js'></script>
   <script  src="js/index.js"></script>
   <script src="js/countdown.js"></script>
 
